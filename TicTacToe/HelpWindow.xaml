@@ -1,0 +1,41 @@
+﻿<Window x:Class="TicTacToe.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToe"
+        mc:Ignorable="d"
+        ResizeMode="NoResize" Icon="Assets/tictactoe1.png" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        Height="630" Width="550" >
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Orange.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Blue.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Background="#0000">
+        <StackPanel Width="350" Margin="50" Background="#0000" >
+            <Image Margin="10 10" Source="/Assets/tictactoe1.png" Width="100">
+            </Image>
+            <TextBox Name="textBoxHelp1" HorizontalAlignment="Center" FontSize="15" Margin="30">Hey! Welcome, </TextBox>
+            <TextBox Name="textBoxHelp2" HorizontalAlignment="Center" FontSize="15" >You Can play this game in two modes, with your </TextBox>
+            <TextBox Name="textBoxHelp3" HorizontalAlignment="Center" FontSize="15" >computer or as multiplayers, choosing either of </TextBox>
+            <TextBox Name="textBoxHelp4" HorizontalAlignment="Center" FontSize="15" >options you've to log in using you credentials or </TextBox>
+            <TextBox Name="textBoxHelp5" HorizontalAlignment="Center" FontSize="15" >signup, if you choose multiplayer option than </TextBox>
+            <TextBox Name="textBoxHelp6" HorizontalAlignment="Center" FontSize="15" >both of the player have to login or sign up, then</TextBox>
+            <TextBox Name="textBoxHelp7" HorizontalAlignment="Center" FontSize="15" >your game starts and after a round you can view </TextBox>
+            <TextBox Name="textBoxHelp8" HorizontalAlignment="Center" FontSize="15" >your score and high achivers list either you can exit</TextBox>
+            <TextBox Name="textBoxHelp9" HorizontalAlignment="Center" FontSize="15" >too.The method of playing this game is you've to gain </TextBox>
+            <TextBox Name="textBoxHelp10" HorizontalAlignment="Center" FontSize="15" >3 continuous X or O whetevr you're playing with </TextBox>
+
+            <Button Name="buttonBack" Click="buttonBack_Click" Margin="15 10" Width="100" Content="Back" FontFamily="Viner Hand ITC" ></Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
